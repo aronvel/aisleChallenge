@@ -16,5 +16,6 @@ if __name__ == "__main__":
     board=game.createBoard(maxRow+1,maxCol+1,contents)
     game.gameOfLife(board)
     livesAfterOneGen = game.getLivesIndices(board)
+    print("Lives after one generation:")
     for life in livesAfterOneGen:
-        print(life[0],",",life[1])
+        print(life[0],",",life[1],sep="")
